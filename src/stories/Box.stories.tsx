@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Button } from './Box';
+import { Box } from './Box';
 
 const meta = {
-  component: Button,
-} satisfies Meta<typeof Button>;
+  component: Box,
+} satisfies Meta<typeof Box>;
 
 export default meta;
 
