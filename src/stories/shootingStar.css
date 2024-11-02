@@ -1,0 +1,41 @@
+/* shootingStar.css */
+
+body {
+  margin: 0;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Anton", sans-serif;
+}
+
+.night {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.shooting_star {
+  position: absolute;
+  width: 3px; /* 유성의 두께 */
+  height: 120px; /* 유성의 꼬리 길이 */
+  background: linear-gradient(-45deg, #817dc2, rgba(255, 255, 255, 0));
+  opacity: 0;
+  transform: rotate(30deg); /* 유성우를 사선으로 기울이기 */
+  animation: shooting linear infinite;
+}
+
+/* 유성우가 왼쪽에서 오른쪽으로 떨어지도록 설정 */
+@keyframes shooting {
+  0% {
+    opacity: 1;
+    transform: translateX(0) translateY(0) rotate(300deg); /* 사선 방향 */
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(300px) translateY(300px) rotate(300deg); /* 오른쪽 아래로 기울어지게 이동 */
+  }
+}
