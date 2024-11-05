@@ -1,0 +1,16 @@
+p {
+  display: inline;
+  color: #ccc;
+
+  background-image: linear-gradient(#ccc, #ccc);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 100% 100%;
+
+  transition: background-size 1000ms, color 700ms;
+}
+
+p:hover {
+  background-size: 0% 100%;
+  color: #121212;
+}
