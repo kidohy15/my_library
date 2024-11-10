@@ -4,7 +4,7 @@ import "./responsiveCard.css";
 
 export const ResponsiveCard = () => {
   return (
-    <div id="wrap">
+    <div id="responsiveCardWrap">
       <div className="container">
         {/* #1 */}
         <div className="mycard">
