@@ -6,7 +6,7 @@
   position: relative;
 } */
 
-.card {
+.gradientBorder_card {
   width: 190px;
   height: 254px;
   background: #07182E;
@@ -14,7 +14,7 @@
   overflow: hidden;
 }
 
-.card::before {
+.gradientBorder_card::before {
   content: '';
   position: absolute;
   width: 100px;
@@ -34,7 +34,7 @@
     transform: rotate(360deg);
   }
 }
-.card::after {
+.gradientBorder_card::after {
   content: '';
   position: absolute;
   background: #07182E;
