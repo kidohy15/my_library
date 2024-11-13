@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com');
+
+.TextOnImage_body {
+  font-family: 'Comfortaa', sans-serif;
+  background: rgb(149, 149, 149);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.TextOnImage_body .container {
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.TextOnImage_body .container img {
+  width: 100%;
+}
+
+.TextOnImage_body .container .box {
+  width: 100%;
+  background: black;
+  opacity: 0.7;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: -100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.6s;
+}
+
+.TextOnImage_body .container h1 {
+  color: white;
+}
+
+.TextOnImage_body .container:hover .box{
+  left: 0%;
+}
