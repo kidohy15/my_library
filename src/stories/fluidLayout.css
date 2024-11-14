@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.fluidLayout_body .fluidLayout_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.fluidLayout_body .fluidLayout_container .name {
+  /* 각 속성값의 자리 의미 
+  flex: flex-grow flex-basis flex-shrink */
+  flex: 1 0 140px;
+}
+.fluidLayout_body .fluidLayout_container .email {
+  flex: 1 0 120px;
+}
+.fluidLayout_body .fluidLayout_container button {
+  flex: 1 0 60px;
+}
