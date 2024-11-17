@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.GlitchText_body{
+  text-align: center;
+}
+
+.GlitchText_body h1{
+  color: white;
+}
+
+.GlitchText_body h1:hover{
+  text-shadow: red -3px 0, cyan 3px 0;
+}
