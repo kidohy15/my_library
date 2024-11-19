@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.TruncateText_body {
+  
+}
+
+.TruncateText_body .text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
