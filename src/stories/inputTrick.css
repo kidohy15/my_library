@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.InputTrick_body {
+  
+}
+
+.InputTrick_body input {
+  appearance: none;
+  padding: 9px 25px;
+  background-color: #fff;
+}
+
+.InputTrick_body input::before {
+  content: "Open";
+}
+
+.InputTrick_body input:checked:before {
+  content: "Close";
+}
