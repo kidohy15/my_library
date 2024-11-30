@@ -1,0 +1,105 @@
+/* ver1 */
+/* @import url('https://fonts.googleapis.com');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.GridLayout_body {
+  
+}
+
+.GridLayout_body main {
+  width: 100%;
+  background-color: beige;
+  display: grid;
+  justify-content: center;
+  grid-template-areas:
+  "head head head"
+  "side content content"
+  "foot foot foot";
+  grid-template-rows: 30px auto 30px;
+}
+
+.GridLayout_body header { grid-area: head; background-color: bisque;}
+.GridLayout_body article { grid-area: content; background-color: azure;}
+.GridLayout_body aside { grid-area: side; background-color: cornsilk;}
+.GridLayout_body footer { grid-area: foot; background-color: darkgray;} */
+
+
+
+
+/* ver2 */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.GridLayout_body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.GridLayout_body main {
+  width: 80%;
+  max-width: 1200px;
+  height: 400px;
+  background-color: beige;
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "head head head"
+    "side content content"
+    "foot foot foot";
+  grid-template-rows: 50px auto 50px;
+  grid-template-columns: 1fr 2fr 1fr;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.GridLayout_body header {
+  grid-area: head;
+  background-color: bisque;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.GridLayout_body article {
+  grid-area: content;
+  background-color: azure;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.GridLayout_body aside {
+  grid-area: side;
+  background-color: cornsilk;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.GridLayout_body footer {
+  grid-area: foot;
+  background-color: darkgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
