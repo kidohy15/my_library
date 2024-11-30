@@ -32,8 +32,6 @@
 
 
 /* ver2 */
-
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 * {
@@ -57,23 +55,24 @@ body {
 .GridLayout_body main {
   width: 80%;
   max-width: 1200px;
-  height: 400px;
+  height: auto;
   background-color: beige;
   display: grid;
   gap: 10px;
-  grid-template-areas:
-    "head head head"
-    "side content content"
-    "foot foot foot";
-  grid-template-rows: 50px auto 50px;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas:  /* 그리드의 영역을 어떻게 가져갈 건지에 대한 정의 */
+    "head"
+    "content"
+    "side"
+    "foot";
+  grid-template-rows: 50px 150px auto 50px; /* 각 행의 높이 영역 */
+  grid-template-columns: 1fr;
   border: 2px solid #ccc;
   border-radius: 8px;
   overflow: hidden;
 }
 
 .GridLayout_body header {
-  grid-area: head;
+  grid-area: head; /* grid-template-areas 에서 확보한 영역에서 어디 부분을 차지할 것인지 정함 */
   background-color: bisque;
   display: flex;
   align-items: center;
@@ -102,4 +101,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* 작은 화면에서 레이아웃 변경 */
+@media (min-width: 768px) {
+  .GridLayout_body main {
+    grid-template-areas:
+      "head head head"
+      "side content content"
+      "foot foot foot";
+    grid-template-rows: 50px 150px 50px;
+    grid-template-columns: 1fr 2fr 1fr;  /* 현재 1fr 2fr 1fr 기준으로 1행 1칸 차지, 2행 2칸 차지 3행 1칸 차지 */
+  }
 }
